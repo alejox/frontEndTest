@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*--------------Variants-----------*/
+
+:root {
+  --color-bg:#fcfcfc;
+  --color-btn:#F1F1F1;
+  --color-arrow:#3D8AFF;
+}
+
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+/* -------------Card ---------------- */
+
+.card{
+  position: relative;
+  width: 572px;
+  height: 739px;
+  background-color: var(--color-bg);
+  border-radius: 5px;
+  box-shadow: -1px 7px 8px -5px rgba(0, 0, 0, 0.14);
+  border: 1px solid #DEDEDE;
+  margin: auto;
+  
+}
+
+.card .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .header .userDetails{
+  display: flex;
+  align-items: center;
+}
+
+.card .header .userDetails .userImg{
+  position: relative;
+  width: 50px;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.card .header .userDetails h2{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+.card .header .userDetails p{
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+/* ---------------Slider------------- */
+
+.swiper {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 526px;
+  height: 325px;
+  font-size: 60px;
+}
+
+.swiper-slide img{
+  width: fit-content;
+  height: fit-content;
+}
+
+.heart{
+  width: 24px;
+}
