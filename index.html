@@ -10,7 +10,7 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Front End Test</title>
+  <title>Alejandro Developer </title>
 </head>
 <body>
   <!-- Card -->
@@ -20,24 +20,25 @@
       <!-- Header  -->
   
       <div class="header">
-        <div class="userDetails">
-          <div class="userImg">
-            <img src="./assets/img/user.png" alt="">
-            <h2>Erik Dunlop</h2>
-            <p>San Francisco, California</p>
-          </div>
+        <div class="userImg">
+          <img src="./assets/img/user.png" alt="">
         </div>
+            <div class="userDetails">
+              <h2>Erik Dunlop</h2>
+              <p>San Francisco, California</p>
+            </div>
       </div>
   
       <!-- Slider main container -->
 <div class="swiper">
   <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
+  <div class="swiper-wrapper" id="element">
     <!-- Slides -->
-    <div class="swiper-slide" id="element">
-    </div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+
     ...
   </div>
   <!-- If we need pagination -->
@@ -48,16 +49,37 @@
   <div class="swiper-button-next"></div>
 </div>
 
-  <p><b>Lucas Credie</b> dolor sit amet, consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et tristique proin. Mi enim ut eu cras ultrices eget et tristique proin.</p>
-  <p><b>Comment</b> consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et </p>
+<!-- Icons -->
+<div class="icons">
+  <img src="/assets/img/heart-blank.svg" alt="like_button" class="heart" onclick="likeBtn()">
+  <img src="/assets/img/msg.png" alt="Comments">
+  <img src="/assets/img/send.png" alt="Send">
+  <p class="like">3,500 likes</p>
+</div>
 
-  <input type="text">
+<!-- Comments -->
 
-  <div class="btns">
-    <img src="/assets/img/heart-blank.svg" alt="" class="heart">
-    <img src="/assets/img/msg.png" alt="" class="">
-    <img src="/assets/img/send.png" alt="" class="">
+<article class="commentsBox">
+  <div class="comment">
+    <p><b>Lucas Credie</b> dolor sit amet, consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et tristique proin. Mi enim ut eu cras ultrices eget et tristique proin.</p>
   </div>
+
+  <div class="comment">
+    <p><b>Comment</b> consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et </p>
+  </div>
+
+  <div class="comment">
+    <p id="newComment"></p>
+  </div>
+
+  <form class="addComments">
+    <input type="text" class="text" placeholder="Add a comment..." id="create-post">
+    <button type="button" value="post" class="send" onclick="write()">Post</button>
+    
+  </form>
+  
+
+</article>
 
   </div>
 
