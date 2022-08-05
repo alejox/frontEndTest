@@ -34,7 +34,7 @@ body {
 
 .card {
   width: 572px;
-  height: 739px;
+  height: fit-content;
   background-color: var(--color-bg);
   border-radius: 5px;
   box-shadow: -1px 7px 8px -5px rgba(0, 0, 0, 0.14);
@@ -53,7 +53,7 @@ body {
 }
 
 .card .header .userDetails h2 {
-  margin:21px 0px 9px;
+  margin: 21px 0px 9px;
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
@@ -80,16 +80,16 @@ body {
 
 
 /* ---------------Icons---------------- */
-.icons{
+.icons {
   margin: 17px 25px 28px;
 }
 
-.icons img{
+.icons img {
   padding-right: 12px;
   height: 24px;
 }
 
-.icons p{
+.icons p {
   margin-top: 10px;
   font-size: 12px;
 }
@@ -97,27 +97,28 @@ body {
 /* ------------------Comments box-----------------*/
 
 
-.commentsBox{
+.commentsBox {
   margin-left: 25px;
   margin-right: 25px;
   display: block;
 }
 
-.comment{
+.comment {
   margin-bottom: 22px;
 }
 
-.commentsBox p{
-  font-size:12px;
+.commentsBox p {
+  font-size: 12px;
   font-weight: 400;
   line-height: 15px;
 }
 
-.addComments{
+.addComments {
   display: flex;
+  margin-bottom: 24px;
 }
 
-.send{
+.send {
   text-align: right;
   color: var(--color-secondary);
   padding-right: 20px;
@@ -128,7 +129,7 @@ body {
 
 /* ----------Input Comment--------------- */
 
-.addComments{
+.addComments {
   height: 55px;
   border-radius: 5px;
   background-color: var(--color-btn);
@@ -137,13 +138,19 @@ body {
   margin-top: 72px;
 }
 
-input{
+
+input {
   background-color: transparent;
   border: 0px;
   width: 100%;
 }
 
-button{
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+button {
   background-color: transparent;
   border: 0px;
   width: 20%;
@@ -154,6 +161,3 @@ button{
 .heart {
   transition: cubic-bezier(0, 2.28, 0.95, 0.69) 0.5s;
 }
-
-
-

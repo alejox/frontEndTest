@@ -1,86 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="alejox.svg" type="image/x-icon">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Alejandro Developer </title>
 </head>
+
 <body>
   <!-- Card -->
 
-    <div class="card">
-  
-      <!-- Header  -->
-  
-      <div class="header">
-        <div class="userImg">
-          <img src="./assets/img/user.png" alt="">
-        </div>
-            <div class="userDetails">
-              <h2>Erik Dunlop</h2>
-              <p>San Francisco, California</p>
-            </div>
+  <div class="card">
+
+    <!-- Header  -->
+
+    <div class="header">
+      <div class="userImg">
+        <img src="./assets/img/user.png" alt="">
       </div>
-  
-      <!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper" id="element">
-    <!-- Slides -->
-    <div class="swiper-slide"></div>
-    <div class="swiper-slide"></div>
-    <div class="swiper-slide"></div>
-    <div class="swiper-slide"></div>
+      <div class="userDetails">
+        <h2>Erik Dunlop</h2>
+        <p>San Francisco, California</p>
+      </div>
+    </div>
 
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper" id="element">
+        <!-- Slides -->
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-<!-- Icons -->
-<div class="icons">
-  <img src="/assets/img/heart-blank.svg" alt="like_button" class="heart" onclick="likeBtn()">
-  <img src="/assets/img/msg.png" alt="Comments">
-  <img src="/assets/img/send.png" alt="Send">
-  <p class="like">3,500 likes</p>
-</div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
 
-<!-- Comments -->
+    <!-- Icons -->
+    <div class="icons">
+      <img src="/assets/img/heart-blank.svg" alt="like_button" class="heart" onclick="likeBtn()">
+      <img src="/assets/img/msg.png" alt="Comments">
+      <img src="/assets/img/send.png" alt="Send">
+      <p class="like">3,500 likes</p>
+    </div>
 
-<section class="commentsBox">
-  <div class="comment">
-    <p><b>Lucas Credie</b> dolor sit amet, consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et tristique proin. Mi enim ut eu cras ultrices eget et tristique proin.</p>
-  </div>
+    <!-- Comments -->
 
-  <div class="comment">
-    <p><b>Comment</b> consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et </p>
-  </div>
+    <section class="commentsBox">
+      <div class="comment">
+        <p><b>Lucas Credie</b> dolor sit amet, consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et
+          tristique proin. Mi enim ut eu cras ultrices eget et tristique proin.</p>
+      </div>
 
-  <div class="comment">
-    <p id="newComment"></p>
+      <div class="comment">
+        <p><b>Comment</b> consectetur adipiscing elit. Mi enim ut eu cras ultrices eget et </p>
+      </div>
 
-  </div>
+      <div class="comment">
+        <p id="newComment" class="comment"></p>
 
-  <form class="addComments">
-    <input type="text" class="text" placeholder="Add a comment..." id="create-post">
+      </div>
 
-    <button type="button" class="send" id="btn">Post</button>
-    
-  </form>
-  
-</section>
+      <form class="addComments">
+        <input type="text" class="text" placeholder="Add a comment..." id="create-post">
+
+
+        <button type="button" id="btn" class="send" onclick='addComment()'>Post</button>
+
+      </form>
+
+    </section>
 
   </div>
 
@@ -89,4 +90,5 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
 </body>
+
 </html>
