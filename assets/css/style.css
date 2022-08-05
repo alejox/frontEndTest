@@ -100,6 +100,7 @@ body {
 .commentsBox{
   margin-left: 25px;
   margin-right: 25px;
+  display: block;
 }
 
 .comment{
@@ -128,7 +129,6 @@ body {
 /* ----------Input Comment--------------- */
 
 .addComments{
-  border: 0px solid;
   height: 55px;
   border-radius: 5px;
   background-color: var(--color-btn);
@@ -146,12 +146,10 @@ input{
 button{
   background-color: transparent;
   border: 0px;
-  width: 100%;
+  width: 20%;
+
 }
 
-input:active{
-  border: 0px;
-}
 
 .heart {
   transition: cubic-bezier(0, 2.28, 0.95, 0.69) 0.5s;

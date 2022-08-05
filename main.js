@@ -69,11 +69,13 @@ document.querySelector('.heart').addEventListener("click", function () {
 /*----------------------------Post------------------------*/
 
 
-function write(e) {
-  e.preventDefault()
-  const input = document.getElementById('create-post');
+function write() {
+  const input = document.getElementById('create-post')
   const value = input.value;
-  const resultP = document.getElementById('comment');
-  resultP.innerText = `${value}`
+  const resultP = document.getElementById('newComment');
+  resultP.innerHTML += `<b>Comment</b> ${value}`
 }
+
+const btn = document.getElementById('btn').addEventListener('click' , write);
+
 
